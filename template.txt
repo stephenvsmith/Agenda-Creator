@@ -1,0 +1,11 @@
+\documentclass[12pt]{article}
+\usepackage[margin=0.75in]{geometry}
+
+
+\setlength\parindent{0pt}
+\begin{document}
+
+\begin{center}
+\Large \underline{\textbf{Agenda for Stephen Smith}} \\
+\vspace{0.15in}
+\large 
