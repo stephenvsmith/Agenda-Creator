@@ -70,7 +70,7 @@ def create_File(task_dict,home=credentials['home_dir']):
     f.write('\\begin{enumerate}\n\n')
 
     # Write the task items and their projects
-    skip = ['Check: Calendar','Text','Set agenda','Add any leftover running stats','Weigh in','Message','Schedule','Update Goodreads']
+    skip = [] # Can add tasks you wish to skip here
     for task, project in task_dict.items():
     	if task in skip:
     		print('Skipping',task)
@@ -101,8 +101,6 @@ def stopProgram(home=credentials['home_dir']):
 
 if __name__=="__main__":
 
-	# '/Users/stephensmith/Dropbox/Daily Agendas' if using Mac
-    
     if stopProgram():
         exit()
 
@@ -118,7 +116,6 @@ if __name__=="__main__":
 
     print("Obtaining Tasks.\n")
     task_dict = getTasks(driver)
-    print(task_dict)
 
     if bool(task_dict):
     	flag = False
